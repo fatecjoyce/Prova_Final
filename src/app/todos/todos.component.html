@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="lista">
+        <h1>Lista de To Dos</h1>
+        <button (click)="getToDo()">Exibir To Do</button>
+
+        <table>
+            <tr>
+                <th>User ID</th>
+                <th>ID</th>
+                <th>Title</th>
+                <th>Completed</th>
+            </tr>
+            
+            <tr *ngFor="let td of todo">
+                <td>{{td.userId}}</td>
+                <td>{{td.id}}</td>
+                <td>{{td.title}}</td>
+                <td>{{td.completed}}</td>
+            </tr>
+        </table>
+        <br>
+    </div>
+</div>
